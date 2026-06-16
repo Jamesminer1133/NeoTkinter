@@ -1,11 +1,12 @@
 import tkinter
-from tkinter.filedialog import *
+from tkinter import filedialog
 import sys
 import os
 import platform
 import ctypes
 from typing import Union, Tuple, Optional
 from packaging import version
+import CTkMenuBar
 
 from .widgets.theme import ThemeManager
 from .widgets.scaling import NTkScalingBaseClass
@@ -335,3 +336,9 @@ class NTk(NTK_PARENT_CLASS, NTkAppearanceModeBaseClass, NTkScalingBaseClass):
 
     def askOpenFile(self, mode="r", filetypes=(("All Files", "*.*"),)):
         return tkinter.filedialog.askopenfile(mode=mode, filetypes=filetypes)
+    
+    def NTkMenuBar(self, mas):
+        return CTkMenuBar.CTkMenuBar(master=mas)
+    
+    def NTkCustomDropdownMenu(self, wid):
+        return CTkMenuBar.CustomDropdownMenu(widget=wid)
