@@ -1,15 +1,15 @@
-import customtkinter
+import neotkinter
 import tkinter.ttk as ttk
 
-app = customtkinter.CTk()
+app = neotkinter.NTk()
 app.geometry("400x600")
 
-p1 = customtkinter.CTkProgressBar(app)
+p1 = neotkinter.NTkProgressBar(app)
 p1.pack(pady=20)
 p2 = ttk.Progressbar(app)
 p2.pack(pady=20)
 
-s1 = customtkinter.CTkSlider(app, command=p1.set)
+s1 = neotkinter.NTkSlider(app, command=p1.set)
 s1.pack(pady=20)
 
 
@@ -34,14 +34,14 @@ def step():
     p2.step(10)
 
 
-sw1 = customtkinter.CTkSwitch(app, text="intermediate mode", command=switch_func)
+sw1 = neotkinter.NTkSwitch(app, text="intermediate mode", command=switch_func)
 sw1.pack(pady=20)
 
-b1 = customtkinter.CTkButton(app, text="start", command=start)
+b1 = neotkinter.NTkButton(app, text="start", command=start)
 b1.pack(pady=20)
-b2 = customtkinter.CTkButton(app, text="stop", command=stop)
+b2 = neotkinter.NTkButton(app, text="stop", command=stop)
 b2.pack(pady=20)
-b3 = customtkinter.CTkButton(app, text="step", command=step)
+b3 = neotkinter.NTkButton(app, text="step", command=step)
 b3.pack(pady=20)
 
 app.mainloop()

@@ -67,14 +67,14 @@ import customtkinter
 customtkinter.set_appearance_mode("System")  # Modes: system (default), light, dark
 customtkinter.set_default_color_theme("blue")  # Themes: blue (default), dark-blue, green
 
-app = customtkinter.CTk()  # create CTk window like you do with the Tk window
+app = customtkinter.NTk()  # create NTk window like you do with the Tk window
 app.geometry("400x240")
 
 def button_function():
     print("button pressed")
 
-# Use CTkButton instead of tkinter Button
-button = customtkinter.CTkButton(master=app, text="CTkButton", command=button_function)
+# Use NTkButton instead of tkinter Button
+button = customtkinter.NTkButton(master=app, text="NTkButton", command=button_function)
 button.place(relx=0.5, rely=0.5, anchor=customtkinter.CENTER)
 
 app.mainloop()
@@ -107,8 +107,8 @@ https://user-images.githubusercontent.com/66446067/204673854-b6cbcfda-d9a1-4425-
 ###
 
 ### Button with images
-It's possible to put an image on a CTkButton. You just have to
-pass a PhotoImage object to the CTkButton with the ``image`` argument.
+It's possible to put an image on a NTkButton. You just have to
+pass a PhotoImage object to the NTkButton with the ``image`` argument.
 If you want no text at all you have to set ``text=""`` or you specify
 how to position the text and image at once with the ``compound`` option:
 

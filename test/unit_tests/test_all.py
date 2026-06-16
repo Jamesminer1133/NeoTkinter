@@ -1,7 +1,7 @@
-from test_ctk import TestCTk
-from test_ctk_toplevel import TestCTkToplevel
-from test_ctk_button import TestCTkButton
+from test_ntk import TestNTk
+from test_ntk_toplevel import TestNTkToplevel
+from test_ntk_button import TestNTkButton
 
-TestCTk().main()
-TestCTkToplevel().main()
-TestCTkButton().main()
+TestNTk().main()
+TestNTkToplevel().main()
+TestNTkButton().main()

@@ -1,9 +1,9 @@
-import customtkinter
+import neotkinter
 
-customtkinter.set_window_scaling(1.3)
+neotkinter.set_window_scaling(1.3)
 
-app = customtkinter.CTk()
-toplevel = customtkinter.CTkToplevel(app)
+app = neotkinter.NTk()
+toplevel = neotkinter.NTkToplevel(app)
 
 
 app.after(1000, lambda: app.geometry("300x300"))

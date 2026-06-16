@@ -17,48 +17,48 @@ ToDo:
 
 ## [5.1.0] - 2022-05-02
 ### Added
- - Added CTkScrollableFrame
+ - Added NTkScrollableFrame
 
 ### Changed
  - Changed license to MIT
 
 ## [5.0.0] - 2022-11-13
 ### Added
- - Added CTkTextbox with automatic x and y scrollbars, corner_radius, border_width, border_spacing
- - Added CTkSegmentedButton
- - Added CTkTabview
+ - Added NTkTextbox with automatic x and y scrollbars, corner_radius, border_width, border_spacing
+ - Added NTkSegmentedButton
+ - Added NTkTabview
  - Added .cget() method to all widgets and windows
  - Added .bind() and .focus() methods to almost all widgets
- - Added 'anchor' option to CTkButton to position image and text inside the button
- - Added 'anchor' option to CTkOptionMenu and 'justify' option to CTkComboBox
- - Added CTkFont class
- - Added CTkImage class to replace PIL.ImageTk.PhotoImage, supports scaling and two images for appearance mode, supports configuring
+ - Added 'anchor' option to NTkButton to position image and text inside the button
+ - Added 'anchor' option to NTkOptionMenu and 'justify' option to NTkComboBox
+ - Added NTkFont class
+ - Added NTkImage class to replace PIL.ImageTk.PhotoImage, supports scaling and two images for appearance mode, supports configuring
  - Added missing configure options for multiple widgets
 
 ### Changed
  - Changed value for transparent colors (same as background) from None to 'transparent'
  - Changed 'text_font' attribute to 'font' in all widgets, changed 'dropdown_text_font' to 'dropdown_font'
  - Changed 'dropdown_color' attribute to 'dropdown_fg_color' for combobox, optionmenu
- - Changed 'orient' attribute of CTkProgressBar and CTkSlider to 'orientation'
- - Width and height attributes of CTkCheckBox, CTkRadioButton, CTkSwitch now describe the outer dimensions of the whole widget. The button/switch size is described by separate attributes like checkbox_width, checkbox_height
- - font attribute must be tuple or CTkFont now, all size values are measured in pixel now
+ - Changed 'orient' attribute of NTkProgressBar and NTkSlider to 'orientation'
+ - Width and height attributes of NTkCheckBox, NTkRadioButton, NTkSwitch now describe the outer dimensions of the whole widget. The button/switch size is described by separate attributes like checkbox_width, checkbox_height
+ - font attribute must be tuple or NTkFont now, all size values are measured in pixel now
  - Changed dictionary key 'window_bg_color' to 'window' in theme files
- - CTkInputDialog attributes completely changed
- - CTkScrollbar attributes scrollbar_color, scrollbar_hover_color changed to button_color, button_hover_color
+ - NTkInputDialog attributes completely changed
+ - NTkScrollbar attributes scrollbar_color, scrollbar_hover_color changed to button_color, button_hover_color
 
 ### Removed
- - Removed setter and getter functions like set_text in CTkButton
- - Removed bg and background attribute from CTk and CTkToplevel, always use fg_color
+ - Removed setter and getter functions like set_text in NTkButton
+ - Removed bg and background attribute from NTk and NTkToplevel, always use fg_color
  - Removed Settings class and moved settings to widget and window classes
  - removed customtkinter.set_spacing_scaling(), now set_widget_scaling() is used for spacing too
 
 ## [4.6.0] - 2022-09-17
 ### Added
- - CTkProgressBar indeterminate mode, automatic progress loop with .start() and .stop()
+ - NTkProgressBar indeterminate mode, automatic progress loop with .start() and .stop()
 
 ## [4.5.0] - 2022-06-23
 ### Added
- - CTkScrollbar (vertical, horizontal)
+ - NTkScrollbar (vertical, horizontal)
 
 ## [4.4.0] - 2022-06-14
 ### Changed
@@ -66,13 +66,13 @@ ToDo:
 
 ## [4.3.0] - 2022-06-1
 ### Added
- - Added CTkComboBox
+ - Added NTkComboBox
  - Small fixes for new dropdown menu
 
 ## [4.2.0] - 2022-05-30
 ### Added
- - CTkOptionMenu with custom dropdown menu
- - Support for clicking on labels of CTkCheckBox, CTkRadioButton, CTkSwitch
+ - NTkOptionMenu with custom dropdown menu
+ - Support for clicking on labels of NTkCheckBox, NTkRadioButton, NTkSwitch
 
 ## [4.1.0] - 2022-05-24
 ### Added
@@ -83,7 +83,7 @@ ToDo:
  - This changelog file
  - Adopted semantic versioning
  - Added HighDPI scaling to all widgets and geometry managers (place, pack, grid)
- - Restructured CTkSettings and renamed a few manager classes
+ - Restructured NTkSettings and renamed a few manager classes
  - Orientation attribute for slider and progressbar
 
 ### Removed

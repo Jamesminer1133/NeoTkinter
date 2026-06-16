@@ -1,9 +1,9 @@
-import customtkinter
+import neotkinter
 import os
 from PIL import Image
 
 
-class ScrollableCheckBoxFrame(customtkinter.CTkScrollableFrame):
+class ScrollableCheckBoxFrame(neotkinter.NTkScrollableFrame):
     def __init__(self, master, item_list, command=None, **kwargs):
         super().__init__(master, **kwargs)
 
@@ -13,7 +13,7 @@ class ScrollableCheckBoxFrame(customtkinter.CTkScrollableFrame):
             self.add_item(item)
 
     def add_item(self, item):
-        checkbox = customtkinter.CTkCheckBox(self, text=item)
+        checkbox = neotkinter.NTkCheckBox(self, text=item)
         if self.command is not None:
             checkbox.configure(command=self.command)
         checkbox.grid(row=len(self.checkbox_list), column=0, pady=(0, 10))
@@ -30,18 +30,18 @@ class ScrollableCheckBoxFrame(customtkinter.CTkScrollableFrame):
         return [checkbox.cget("text") for checkbox in self.checkbox_list if checkbox.get() == 1]
 
 
-class ScrollableRadiobuttonFrame(customtkinter.CTkScrollableFrame):
+class ScrollableRadiobuttonFrame(neotkinter.NTkScrollableFrame):
     def __init__(self, master, item_list, command=None, **kwargs):
         super().__init__(master, **kwargs)
 
         self.command = command
-        self.radiobutton_variable = customtkinter.StringVar()
+        self.radiobutton_variable = neotkinter.StringVar()
         self.radiobutton_list = []
         for i, item in enumerate(item_list):
             self.add_item(item)
 
     def add_item(self, item):
-        radiobutton = customtkinter.CTkRadioButton(self, text=item, value=item, variable=self.radiobutton_variable)
+        radiobutton = neotkinter.NTkRadioButton(self, text=item, value=item, variable=self.radiobutton_variable)
         if self.command is not None:
             radiobutton.configure(command=self.command)
         radiobutton.grid(row=len(self.radiobutton_list), column=0, pady=(0, 10))
@@ -58,19 +58,19 @@ class ScrollableRadiobuttonFrame(customtkinter.CTkScrollableFrame):
         return self.radiobutton_variable.get()
 
 
-class ScrollableLabelButtonFrame(customtkinter.CTkScrollableFrame):
+class ScrollableLabelButtonFrame(neotkinter.NTkScrollableFrame):
     def __init__(self, master, command=None, **kwargs):
         super().__init__(master, **kwargs)
         self.grid_columnconfigure(0, weight=1)
 
         self.command = command
-        self.radiobutton_variable = customtkinter.StringVar()
+        self.radiobutton_variable = neotkinter.StringVar()
         self.label_list = []
         self.button_list = []
 
     def add_item(self, item, image=None):
-        label = customtkinter.CTkLabel(self, text=item, image=image, compound="left", padx=5, anchor="w")
-        button = customtkinter.CTkButton(self, text="Command", width=100, height=24)
+        label = neotkinter.NTkLabel(self, text=item, image=image, compound="left", padx=5, anchor="w")
+        button = neotkinter.NTkButton(self, text="Command", width=100, height=24)
         if self.command is not None:
             button.configure(command=lambda: self.command(item))
         label.grid(row=len(self.label_list), column=0, pady=(0, 10), sticky="w")
@@ -88,11 +88,11 @@ class ScrollableLabelButtonFrame(customtkinter.CTkScrollableFrame):
                 return
 
 
-class App(customtkinter.CTk):
+class App(neotkinter.NTk):
     def __init__(self):
         super().__init__()
 
-        self.title("CTkScrollableFrame example")
+        self.title("NTkScrollableFrame example")
         self.grid_rowconfigure(0, weight=1)
         self.columnconfigure(2, weight=1)
 
@@ -115,7 +115,7 @@ class App(customtkinter.CTk):
         self.scrollable_label_button_frame = ScrollableLabelButtonFrame(master=self, width=300, command=self.label_button_frame_event, corner_radius=0)
         self.scrollable_label_button_frame.grid(row=0, column=2, padx=0, pady=0, sticky="nsew")
         for i in range(20):  # add items with images
-            self.scrollable_label_button_frame.add_item(f"image and item {i}", image=customtkinter.CTkImage(Image.open(os.path.join(current_dir, "test_images", "chat_light.png"))))
+            self.scrollable_label_button_frame.add_item(f"image and item {i}", image=neotkinter.NTkImage(Image.open(os.path.join(current_dir, "test_images", "chat_light.png"))))
 
     def checkbox_frame_event(self):
         print(f"checkbox frame modified: {self.scrollable_checkbox_frame.get_checked_items()}")
@@ -128,6 +128,6 @@ class App(customtkinter.CTk):
 
 
 if __name__ == "__main__":
-    customtkinter.set_appearance_mode("dark")
+    neotkinter.set_appearance_mode("dark")
     app = App()
     app.mainloop()
