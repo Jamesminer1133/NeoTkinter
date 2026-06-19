@@ -1,12 +1,6 @@
 # **NeoTkinter**
 
-NeoTkinter is a python UI-library based on CustomTkinter, which provides new, modern and
-fully customizable widgets. They are created and used like normal Tkinter widgets and
-can also be used in combination with normal Tkinter elements. The widgets
-and the window colors either adapt to the system appearance or the manually set mode
-('light', 'dark'), and all NeoTkinter widgets and windows support HighDPI scaling
-(Windows, macOS). With NeoTkinter you'll get a consistent and modern look across all
-desktop platforms (Windows, macOS, Linux).
+NeoTkinter is a python UI-library based on CustomTkinter, which combines the elements of which of customtkinter and it's extensions.
 
 ## Example Program
 To test NeoTkinter you can try this simple example with only a single button:
