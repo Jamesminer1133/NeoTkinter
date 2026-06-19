@@ -4,7 +4,6 @@ Author: Akash Bora
 '''
 
 from neotkinter.windows.ntk_toplevel import NTkToplevel
-from neotkinter.windows.widgets.ntk_frame import NTkFrame
 from neotkinter.windows.widgets.ntk_scrollable_frame import NTkScrollableFrame
 from neotkinter.windows.widgets.ntk_entry import NTkEntry
 from neotkinter.windows.widgets.ntk_label import NTkLabel

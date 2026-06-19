@@ -36,14 +36,15 @@ scrollingOptionMenu.set("Select Value From NTkOptionMenu")
 scrollingOptionMenu.pack(pady = 20, padx = 20)
 ntk.NTkScrollableDropdown(attach = scrollingOptionMenu, values = randomWords)
 
-def click():
-    print("Button 1 clicked.")
+def selectFile():
+    print("File select button clicked.")
     try:
-        print("The file:", ntk.filedialog.askopenfile(mode = "r", filetypes=[("Python Files", "*.py")]).name, "was selected.")
+        msg = "The file:", ntk.filedialog.askopenfile(mode = "r", filetypes=[("Python Files", "*.py")]).name, "was selected."
+        ntk.NTkMessagebox(message= msg, icon="check", option_1="Ok")
     except Exception:
-        print("No file was selected.")
+        ntk.NTkMessagebox(message= "No file was selected.", icon="warning", option_1="Ok")
 
-button1 = ntk.NTkButton(master = app, text = "Click Me!", command = click)
+button1 = ntk.NTkButton(master = app, text = "Select File", command = selectFile)
 button1.pack(pady = 20, padx = 20)
 
 app.mainloop()
@@ -61,5 +62,6 @@ from neotkinter.windows.widgets.ntk_button import NTkButton
 from neotkinter.windows.widgets.ntk_combobox import NTkComboBox
 from neotkinter.windows.widgets.ntk_optionmenu import NTkOptionMenu
 from neotkinter.windows.widgets.theme import ThemeManager
+from neotkinter.windows.widgets.image import NTkImage
 from tkinter import StringVar
 """

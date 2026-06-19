@@ -3,14 +3,11 @@ Advanced Scrollable Dropdown Frame class for neotkinter widgets
 Author: Akash Bora
 '''
 
-from neotkinter.windows.ntk_toplevel import NTkToplevel
 from neotkinter.windows.widgets.ntk_frame import NTkFrame
 from neotkinter.windows.widgets.ntk_scrollable_frame import NTkScrollableFrame
 from neotkinter.windows.widgets.ntk_entry import NTkEntry
 from neotkinter.windows.widgets.ntk_label import NTkLabel
 from neotkinter.windows.widgets.ntk_button import NTkButton
-from neotkinter.windows.widgets.ntk_combobox import NTkComboBox
-from neotkinter.windows.widgets.ntk_optionmenu import NTkOptionMenu
 from neotkinter.windows.widgets.theme import ThemeManager
 from tkinter import StringVar
 import sys
