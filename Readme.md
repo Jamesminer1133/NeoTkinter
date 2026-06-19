@@ -1,3 +1,5 @@
+#### NeoTkinter
+
 NeoTkinter is a python UI-library based on Tkinter, which provides new, modern and
 fully customizable widgets. They are created and used like normal Tkinter widgets and
 can also be used in combination with normal Tkinter elements. The widgets
