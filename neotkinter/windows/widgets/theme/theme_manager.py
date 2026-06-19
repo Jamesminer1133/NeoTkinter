@@ -8,7 +8,7 @@ from typing import List, Union
 class ThemeManager:
 
     theme: dict = {}  # contains all the theme data
-    _built_in_themes: List[str] = ["blue", "green", "dark-blue", "sweetkind"]
+    _built_in_themes: List[str] = ["blue", "green", "dark-blue", "purple"]
     _currently_loaded_theme: Union[str, None] = None
 
     @classmethod
@@ -16,8 +16,8 @@ class ThemeManager:
         script_directory = os.path.dirname(os.path.abspath(__file__))
 
         if theme_name_or_path in cls._built_in_themes:
-            customtkinter_path = pathlib.Path(script_directory).parent.parent.parent
-            with open(os.path.join(customtkinter_path, "assets", "themes", f"{theme_name_or_path}.json"), "r") as f:
+            NeoTkinter_path = pathlib.Path(script_directory).parent.parent.parent
+            with open(os.path.join(NeoTkinter_path, "assets", "themes", f"{theme_name_or_path}.json"), "r") as f:
                 cls.theme = json.load(f)
         else:
             with open(theme_name_or_path, "r") as f:

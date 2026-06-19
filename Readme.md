@@ -1,15 +1,15 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./documentation_images/CustomTkinter_logo_dark.png">
-    <img src="./documentation_images/CustomTkinter_logo_light.png">
+    <source media="(prefers-color-scheme: dark)" srcset="./documentation_images/NeoTkinter_logo_dark.png">
+    <img src="./documentation_images/NeoTkinter_logo_light.png">
   </picture>
 </p>
 
 <div align="center">
 
-![PyPI](https://img.shields.io/pypi/v/customtkinter)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/customtkinter?color=green&label=downloads)
-![Downloads last 6 month](https://static.pepy.tech/personalized-badge/customtkinter?period=total&units=international_system&left_color=grey&right_color=green&left_text=total%20downloads)
+![PyPI](https://img.shields.io/pypi/v/NeoTkinter)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/NeoTkinter?color=green&label=downloads)
+![Downloads last 6 month](https://static.pepy.tech/personalized-badge/NeoTkinter?period=total&units=international_system&left_color=grey&right_color=green&left_text=total%20downloads)
 ![PyPI - License](https://img.shields.io/badge/license-MIT-blue)
 
 </div>
@@ -25,16 +25,16 @@
 |----------------------------------------------|
 
 <h3>
-Official website: https://customtkinter.tomschimansky.com/
+Official website: https://NeoTkinter.tomschimansky.com/
 </h3>
 </div>
 
-CustomTkinter is a python UI-library based on Tkinter, which provides new, modern and
+NeoTkinter is a python UI-library based on Tkinter, which provides new, modern and
 fully customizable widgets. They are created and used like normal Tkinter widgets and
 can also be used in combination with normal Tkinter elements. The widgets
 and the window colors either adapt to the system appearance or the manually set mode
-('light', 'dark'), and all CustomTkinter widgets and windows support HighDPI scaling
-(Windows, macOS). With CustomTkinter you'll get a consistent and modern look across all
+('light', 'dark'), and all NeoTkinter widgets and windows support HighDPI scaling
+(Windows, macOS). With NeoTkinter you'll get a consistent and modern look across all
 desktop platforms (Windows, macOS, Linux).
 
 ![](documentation_images/complex_example_dark_Windows.png)
@@ -48,34 +48,34 @@ desktop platforms (Windows, macOS, Linux).
 ## Installation
 Install the module with pip:
 ```
-pip3 install customtkinter
+pip3 install NeoTkinter
 ```
-**Update existing installation:** ```pip3 install customtkinter --upgrade```\
+**Update existing installation:** ```pip3 install NeoTkinter --upgrade```\
 (update as often as possible because this library is under active development)
 
 ## Documentation
 
 The **official** documentation can be found here:
 
-**➡️ https://customtkinter.tomschimansky.com/documentation**.
+**➡️ https://NeoTkinter.tomschimansky.com/documentation**.
 
 ## Example Program
-To test customtkinter you can try this simple example with only a single button:
+To test NeoTkinter you can try this simple example with only a single button:
 ```python
-import customtkinter
+import NeoTkinter
 
-customtkinter.set_appearance_mode("System")  # Modes: system (default), light, dark
-customtkinter.set_default_color_theme("blue")  # Themes: blue (default), dark-blue, green
+NeoTkinter.set_appearance_mode("System")  # Modes: system (default), light, dark
+NeoTkinter.set_default_color_theme("blue")  # Themes: blue (default), dark-blue, green
 
-app = customtkinter.NTk()  # create NTk window like you do with the Tk window
+app = NeoTkinter.NTk()  # create NTk window like you do with the Tk window
 app.geometry("400x240")
 
 def button_function():
     print("button pressed")
 
 # Use NTkButton instead of tkinter Button
-button = customtkinter.NTkButton(master=app, text="NTkButton", command=button_function)
-button.place(relx=0.5, rely=0.5, anchor=customtkinter.CENTER)
+button = NeoTkinter.NTkButton(master=app, text="NTkButton", command=button_function)
+button.place(relx=0.5, rely=0.5, anchor=NeoTkinter.CENTER)
 
 app.mainloop()
 ```
@@ -83,7 +83,7 @@ which results in the following window on macOS:
 
 <img src="documentation_images/single_button_macOS.png" width="400"/>
 
-In the [examples folder](https://github.com/TomSchimansky/CustomTkinter/tree/master/examples), you
+In the [examples folder](https://github.com/TomSchimansky/NeoTkinter/tree/master/examples), you
 can find more example programs and in the [Documentation](https://github.com/TomSchimansky/CustomTkinter/wiki)
 you can find further information on the appearance mode, scaling, themes and all widgets.
 
@@ -91,7 +91,7 @@ you can find further information on the appearance mode, scaling, themes and all
 
 ### Appearance mode change and scaling change
 
-CustomTkinter can adapt to the Windows 10/11 light or dark mode:
+NeoTkinter can adapt to the Windows 10/11 light or dark mode:
 
 https://user-images.githubusercontent.com/66446067/204672968-6584f360-4c52-434f-9c16-25761341368b.mp4
 
@@ -124,12 +124,12 @@ with any other widgets.
 
 ### Integration of TkinterMapView widget
 In the following example I used a TkinterMapView which integrates
-well with a CustomTkinter program. It's a tile based map widget which displays
+well with a NeoTkinter program. It's a tile based map widget which displays
 OpenStreetMap or other tile based maps:
 
 https://user-images.githubusercontent.com/66446067/204675835-1584a8da-5acc-4993-b4a9-e70f06fa14b0.mp4
 
-| _`examples/map_with_customtkinter.py` from TkinterMapView repository on Windows 11_
+| _`examples/map_with_NeoTkinter.py` from TkinterMapView repository on Windows 11_
 
 You can find the TkinterMapView library and example program here:
 https://github.com/TomSchimansky/TkinterMapView

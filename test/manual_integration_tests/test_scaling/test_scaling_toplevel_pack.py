@@ -1,5 +1,5 @@
 import tkinter
-import neotkinter  # <- import the CustomTkinter module
+import neotkinter  # <- import the NeoTkinter module
 
 neotkinter.ScalingTracker.set_window_scaling(0.5)
 
@@ -8,7 +8,7 @@ neotkinter.set_default_color_theme("blue")  # Themes: "blue" (standard), "green"
 
 app = neotkinter.NTk()  # create NTk window like you do with the Tk window (you can also use normal tkinter.Tk window)
 app.geometry("400x480")
-app.title("CustomTkinter manual scaling test")
+app.title("NeoTkinter manual scaling test")
 
 top_tk = neotkinter.NTkToplevel(app)
 top_tk.geometry("500x500")

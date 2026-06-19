@@ -8,7 +8,7 @@ class TestApp(neotkinter.NTk):
     def __init__(self):
         super().__init__()
         self.geometry(f"{1400}x{700}")
-        self.title("CustomTkinter complete test")
+        self.title("NeoTkinter complete test")
 
         self.create_widgets_on_tk()
         self.create_widgets_on_ntk_frame()

@@ -71,7 +71,7 @@ class NTk(NTK_PARENT_CLASS, NTkAppearanceModeBaseClass, NTkScalingBaseClass):
         # save focus before calling withdraw
         self.focused_widget_before_widthdraw = None
 
-        # set CustomTkinter titlebar icon (Windows only)
+        # set NeoTkinter titlebar icon (Windows only)
         if sys.platform.startswith("win"):
             self.after(200, self._windows_set_titlebar_icon)
 
@@ -237,8 +237,8 @@ class NTk(NTK_PARENT_CLASS, NTkAppearanceModeBaseClass, NTkScalingBaseClass):
         try:
             # if not the user already called iconbitmap method, set icon
             if not self._iconbitmap_method_called:
-                customtkinter_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-                self.iconbitmap(os.path.join(customtkinter_directory, "assets", "icons", "CustomTkinter_icon_Windows.ico"))
+                NeoTkinter_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+                self.iconbitmap(os.path.join(NeoTkinter_directory, "assets", "icons", "NeoTkinter_icon_Windows.ico"))
         except Exception:
             pass
 
@@ -333,12 +333,3 @@ class NTk(NTK_PARENT_CLASS, NTkAppearanceModeBaseClass, NTkScalingBaseClass):
             self._windows_set_titlebar_color(mode_string)
 
         super().configure(bg=self._apply_appearance_mode(self._fg_color))
-
-    def askOpenFile(self, mode="r", filetypes=(("All Files", "*.*"),)):
-        return tkinter.filedialog.askopenfile(mode=mode, filetypes=filetypes)
-    
-    def NTkMenuBar(self, mas):
-        return CTkMenuBar.CTkMenuBar(master=mas)
-    
-    def NTkCustomDropdownMenu(self, wid):
-        return CTkMenuBar.CustomDropdownMenu(widget=wid)

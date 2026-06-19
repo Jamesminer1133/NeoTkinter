@@ -163,6 +163,6 @@ cython_debug/
 
 # Local ignores
 .DS_Store
-documentation_images/customtkinter_design.afdesign
+documentation_images/NeoTkinter_design.afdesign
 images/
 Readme_pypi.md

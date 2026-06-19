@@ -41,8 +41,8 @@ class NTkToplevel(tkinter.Toplevel, NTkAppearanceModeBaseClass, NTkScalingBaseCl
         try:
             # Set Windows titlebar icon
             if sys.platform.startswith("win"):
-                customtkinter_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-                self.after(200, lambda: self.iconbitmap(os.path.join(customtkinter_directory, "assets", "icons", "CustomTkinter_icon_Windows.ico")))
+                NeoTkinter_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+                self.after(200, lambda: self.iconbitmap(os.path.join(NeoTkinter_directory, "assets", "icons", "NeoTkinter_icon_Windows.ico")))
         except Exception:
             pass
 
@@ -73,7 +73,7 @@ class NTkToplevel(tkinter.Toplevel, NTkAppearanceModeBaseClass, NTkScalingBaseCl
         # save focus before calling withdraw
         self.focused_widget_before_widthdraw = None
 
-        # set CustomTkinter titlebar icon (Windows only)
+        # set NeoTkinter titlebar icon (Windows only)
         if sys.platform.startswith("win"):
             self.after(200, self._windows_set_titlebar_icon)
 
@@ -207,8 +207,8 @@ class NTkToplevel(tkinter.Toplevel, NTkAppearanceModeBaseClass, NTkScalingBaseCl
         try:
             # if not the user already called iconbitmap method, set icon
             if not self._iconbitmap_method_called:
-                customtkinter_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-                self.iconbitmap(os.path.join(customtkinter_directory, "assets", "icons", "CustomTkinter_icon_Windows.ico"))
+                NeoTkinter_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+                self.iconbitmap(os.path.join(NeoTkinter_directory, "assets", "icons", "NeoTkinter_icon_Windows.ico"))
         except Exception:
             pass
 

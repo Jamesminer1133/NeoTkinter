@@ -16,7 +16,7 @@ class App(neotkinter.NTk):
 
         # load images with light and dark mode image
         image_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "test_images")
-        self.logo_image = neotkinter.NTkImage(Image.open(os.path.join(image_path, "CustomTkinter_logo_single.png")), size=(26, 26))
+        self.logo_image = neotkinter.NTkImage(Image.open(os.path.join(image_path, "NeoTkinter_logo_single.png")), size=(26, 26))
         self.large_test_image = neotkinter.NTkImage(Image.open(os.path.join(image_path, "large_test_image.png")), size=(500, 150))
         self.image_icon_image = neotkinter.NTkImage(Image.open(os.path.join(image_path, "image_icon_light.png")), size=(20, 20))
         self.home_image = neotkinter.NTkImage(light_image=Image.open(os.path.join(image_path, "home_dark.png")),

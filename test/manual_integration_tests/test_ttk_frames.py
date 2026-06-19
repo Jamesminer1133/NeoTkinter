@@ -6,7 +6,7 @@ neotkinter.set_appearance_mode("light")
 
 app = neotkinter.NTk()
 app.geometry("1400x480")
-app.title("CustomTkinter TTk Compatibility Test")
+app.title("NeoTkinter TTk Compatibility Test")
 
 app.grid_rowconfigure(0, weight=1)
 app.grid_columnconfigure((0, 1, 2, 3, 5, 6), weight=1)

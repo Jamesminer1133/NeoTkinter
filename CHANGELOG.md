@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ToDo:
  - cursor configuring
  - overwrite winfo methods
- - set icon (self.call("wm", "iconphoto", self._w, tkinter.PhotoImage(file="test_images/CustomTkinter_logo_single.png")))
+ - set icon (self.call("wm", "iconphoto", self._w, tkinter.PhotoImage(file="test_images/NeoTkinter_logo_single.png")))
  - add option to change label position for checkbox, switch, radiobutton #628
 
 
@@ -50,7 +50,7 @@ ToDo:
  - Removed setter and getter functions like set_text in NTkButton
  - Removed bg and background attribute from NTk and NTkToplevel, always use fg_color
  - Removed Settings class and moved settings to widget and window classes
- - removed customtkinter.set_spacing_scaling(), now set_widget_scaling() is used for spacing too
+ - removed NeoTkinter.set_spacing_scaling(), now set_widget_scaling() is used for spacing too
 
 ## [4.6.0] - 2022-09-17
 ### Added

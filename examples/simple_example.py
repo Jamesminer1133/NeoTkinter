@@ -5,7 +5,7 @@ neotkinter.set_default_color_theme("blue")  # Themes: "blue" (standard), "green"
 
 app = neotkinter.NTk()
 app.geometry("400x780")
-app.title("CustomTkinter simple_example.py")
+app.title("NeoTkinter simple_example.py")
 
 
 def button_callback():

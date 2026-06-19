@@ -12,7 +12,7 @@ class App(neotkinter.NTk):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.title("CustomTkinter example_background_image.py")
+        self.title("NeoTkinter example_background_image.py")
         self.geometry(f"{self.width}x{self.height}")
         self.resizable(False, False)
 
@@ -26,7 +26,7 @@ class App(neotkinter.NTk):
         # create login frame
         self.login_frame = neotkinter.NTkFrame(self, corner_radius=0)
         self.login_frame.grid(row=0, column=0, sticky="ns")
-        self.login_label = neotkinter.NTkLabel(self.login_frame, text="CustomTkinter\nLogin Page",
+        self.login_label = neotkinter.NTkLabel(self.login_frame, text="NeoTkinter\nLogin Page",
                                                   font=neotkinter.NTkFont(size=20, weight="bold"))
         self.login_label.grid(row=0, column=0, padx=30, pady=(150, 15))
         self.username_entry = neotkinter.NTkEntry(self.login_frame, width=200, placeholder_text="username")
@@ -39,7 +39,7 @@ class App(neotkinter.NTk):
         # create main frame
         self.main_frame = neotkinter.NTkFrame(self, corner_radius=0)
         self.main_frame.grid_columnconfigure(0, weight=1)
-        self.main_label = neotkinter.NTkLabel(self.main_frame, text="CustomTkinter\nMain Page",
+        self.main_label = neotkinter.NTkLabel(self.main_frame, text="NeoTkinter\nMain Page",
                                                  font=neotkinter.NTkFont(size=20, weight="bold"))
         self.main_label.grid(row=0, column=0, padx=30, pady=(30, 15))
         self.back_button = neotkinter.NTkButton(self.main_frame, text="Back", command=self.back_event, width=200)

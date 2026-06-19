@@ -1,5 +1,5 @@
-include customtkinter/assets/*
-include customtkinter/assets/fonts/*
-include customtkinter/assets/fonts/Roboto/*
-include customtkinter/assets/icons/*
-include customtkinter/assets/themes/*
+include NeoTkinter/assets/*
+include NeoTkinter/assets/fonts/*
+include NeoTkinter/assets/fonts/Roboto/*
+include NeoTkinter/assets/icons/*
+include NeoTkinter/assets/themes/*

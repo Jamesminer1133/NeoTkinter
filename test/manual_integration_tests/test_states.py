@@ -4,7 +4,7 @@ import neotkinter
 
 app = neotkinter.NTk()
 app.geometry("400x900")
-app.title("CustomTkinter Test")
+app.title("NeoTkinter Test")
 
 
 def change_state(widget):

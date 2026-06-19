@@ -34,11 +34,16 @@ from .windows.widgets import NTkSwitch
 from .windows.widgets import NTkTabview
 from .windows.widgets import NTkTextbox
 from .windows.widgets import NTkScrollableFrame
+from .windows.widgets import NTkDropdownMenu
+from .windows.widgets import NTkMenuBar
 
 # import windows
 from .windows import NTk
 from .windows import NTkToplevel
 from .windows import NTkInputDialog
+from .windows import NTkTitleMenu
+from .windows import NTkScrollableDropdown
+from .windows import NTkScrollableDropdownFrame
 
 # import font classes
 from .windows.widgets.font import NTkFont

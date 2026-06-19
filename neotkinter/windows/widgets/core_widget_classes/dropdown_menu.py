@@ -183,9 +183,9 @@ class DropdownMenu(tkinter.Menu, NTkAppearanceModeBaseClass, NTkScalingBaseClass
 
         else:
             raise ValueError(f"Wrong font type {type(font)} for font '{font}'\n" +
-                             f"For consistency, Customtkinter requires the font argument to be a tuple of len 2 or 3 or an instance of NTkFont.\n" +
+                             f"For consistency, NeoTkinter requires the font argument to be a tuple of len 2 or 3 or an instance of NTkFont.\n" +
                              f"\nUsage example:\n" +
-                             f"font=customtkinter.NTkFont(family='<name>', size=<size in px>)\n" +
+                             f"font=NeoTkinter.NTkFont(family='<name>', size=<size in px>)\n" +
                              f"font=('<name>', <size in px>)\n")
 
     def _set_scaling(self, new_widget_scaling, new_window_scaling):

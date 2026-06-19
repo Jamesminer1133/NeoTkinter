@@ -164,9 +164,9 @@ class NTkBaseClass(tkinter.Frame, NTkAppearanceModeBaseClass, NTkScalingBaseClas
 
         else:
             raise ValueError(f"Wrong font type {type(font)}\n" +
-                             f"For consistency, Customtkinter requires the font argument to be a tuple of len 2 to 6 or an instance of NTkFont.\n" +
+                             f"For consistency, NeoTkinter requires the font argument to be a tuple of len 2 to 6 or an instance of NTkFont.\n" +
                              f"\nUsage example:\n" +
-                             f"font=customtkinter.NTkFont(family='<name>', size=<size in px>)\n" +
+                             f"font=NeoTkinter.NTkFont(family='<name>', size=<size in px>)\n" +
                              f"font=('<name>', <size in px>)\n")
 
     def _check_image_type(self, image: any):

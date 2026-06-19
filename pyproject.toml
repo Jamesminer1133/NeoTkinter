@@ -3,7 +3,7 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.tbump]
-github_url = "https://github.com/TomSchimansky/CustomTkinter"
+github_url = "https://github.com/TomSchimansky/NeoTkinter"
 
 [tool.tbump.version]
 current = "5.2.2"
@@ -30,5 +30,5 @@ tag_template = "v{new_version}"
 src = "setup.cfg"
 
 [[tool.tbump.file]]
-src = "customtkinter/__init__.py"
+src = "NeoTkinter/__init__.py"
 search = "__version__ = \"{current_version}\""

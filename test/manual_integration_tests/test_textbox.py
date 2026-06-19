@@ -1,7 +1,7 @@
 import neotkinter
 
-#customtkinter.set_widget_scaling(0.9)
-#customtkinter.set_window_scaling(0.9)
+#NeoTkinter.set_widget_scaling(0.9)
+#NeoTkinter.set_window_scaling(0.9)
 
 neotkinter.set_appearance_mode("dark")
 
@@ -98,5 +98,5 @@ scrollbar4 = neotkinter.NTkScrollbar(app, command=textbox_4.yview)
 scrollbar4.grid(row=0, column=5, sticky="nsew")
 textbox_4.configure(yscrollcommand=scrollbar4.set)
 
-# app.after(3000, lambda: customtkinter.set_appearance_mode("light"))
+# app.after(3000, lambda: NeoTkinter.set_appearance_mode("light"))
 app.mainloop()
