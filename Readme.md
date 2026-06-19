@@ -1,6 +1,6 @@
 # **NeoTkinter**
 
-NeoTkinter is a python UI-library based on Tkinter, which provides new, modern and
+NeoTkinter is a python UI-library based on CustomTkinter, which provides new, modern and
 fully customizable widgets. They are created and used like normal Tkinter widgets and
 can also be used in combination with normal Tkinter elements. The widgets
 and the window colors either adapt to the system appearance or the manually set mode
@@ -13,7 +13,7 @@ To test NeoTkinter you can try this simple example with only a single button:
 ```python
 import NeoTkinter
 
-NeoTkinter.set_appearance_mode("System")  # Modes: system (default), light, dark
+NeoTkinter.set_appearance_mode("system")  # Modes: system (default), light, dark
 NeoTkinter.set_default_color_theme("blue")  # Themes: purple (default), blue, dark-blue, green
 
 app = NeoTkinter.NTk()  # create NTk window like you do with the Tk window
