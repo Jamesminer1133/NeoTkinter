@@ -16,3 +16,4 @@ from .ntk_textbox import NTkTextbox
 from .ntk_scrollable_frame import NTkScrollableFrame
 from .ntk_dropdown_menu import NTkDropdownMenu
 from .ntk_menu_bar import NTkMenuBar
+from .ntk_code_box import NTkCodeBox

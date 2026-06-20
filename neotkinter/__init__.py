@@ -36,6 +36,7 @@ from .windows.widgets import NTkTextbox
 from .windows.widgets import NTkScrollableFrame
 from .windows.widgets import NTkDropdownMenu
 from .windows.widgets import NTkMenuBar
+from .windows.widgets import NTkCodeBox
 
 # import windows
 from .windows import NTk
@@ -44,7 +45,7 @@ from .windows import NTkInputDialog
 from .windows import NTkTitleMenu
 from .windows import NTkScrollableDropdown
 from .windows import NTkScrollableDropdownFrame
-from .windows import NTkMessagebox
+from .windows import NTkMessageBox
 
 # import font classes
 from .windows.widgets.font import NTkFont

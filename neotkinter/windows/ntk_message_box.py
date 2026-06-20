@@ -17,7 +17,7 @@ import sys
 import time
 from typing import Literal
 
-class NTkMessagebox(NTkToplevel):
+class NTkMessageBox(NTkToplevel):
     ICONS = {
         "check": None,
         "cancel": None,

@@ -1,10 +1,10 @@
 import neotkinter as ntk
 
-app = ntk.NTk()
-app.title("NeoTkinter Testing Application")
-app.geometry("1000x500")
+window = ntk.NTk()
+window.title("NeoTkinter Testing Application")
+window.geometry("1000x500")
 
-menuBar = ntk.NTkMenuBar(app)
+menuBar = ntk.NTkMenuBar(window)
 menuButton = menuBar.add_cascade("Menu Entry")
 blankMenuButton = menuBar.add_cascade("Blank Menu Entry")
 
@@ -14,7 +14,7 @@ dropdown.add_separator()
 submenu = dropdown.add_submenu("submenu") 
 submenu.add_option(option="value")
 
-titlebar = ntk.NTkTitleMenu(app)
+titlebar = ntk.NTkTitleMenu(window)
 titlebarButton = titlebar.add_cascade("Titlebar Entry")
 blankTitlebarButton = titlebar.add_cascade("Blank Titlebar Entry")
 
@@ -23,6 +23,9 @@ titleDropdown.add_option(option="value")
 titleDropdown.add_separator() 
 titleSubmenu = titleDropdown.add_submenu("submenu") 
 titleSubmenu.add_option(option="value")
+
+app = ntk.NTkScrollableFrame(master = window, width = 1000)
+app.pack(pady = 20, padx = 20, expand = True, fill = "both")
 
 randomWords = ["Dark","Celebration","Example","Relenquish","Scandal",
                "Wriggle","Paint","Ostracize","Figure","Agriculture",
@@ -47,7 +50,10 @@ def selectFile():
 button1 = ntk.NTkButton(master = app, text = "Select File", command = selectFile)
 button1.pack(pady = 20, padx = 20)
 
-app.mainloop()
+textEditor = ntk.NTkCodeBox(master = app, language = "txt")
+textEditor.pack(pady = 20, padx = 20, expand = True, fill = "both")
+
+window.mainloop()
 
 
 """
