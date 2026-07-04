@@ -53,3 +53,7 @@ class ThemeManager:
                 raise ValueError(f"cannot modify builtin theme '{cls._currently_loaded_theme}'")
         else:
             raise ValueError(f"cannot save theme, no theme is loaded")
+
+    @classmethod
+    def get(cls, widget, key, default=None):
+        return cls.theme.get(widget, {}).get(key, default)

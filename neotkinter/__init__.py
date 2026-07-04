@@ -18,34 +18,43 @@ from .windows.widgets.core_rendering import NTkCanvas
 from .windows.widgets.core_widget_classes import NTkBaseClass
 
 # import widgets
-from .windows.widgets import NTkButton
-from .windows.widgets import NTkCheckBox
-from .windows.widgets import NTkComboBox
-from .windows.widgets import NTkEntry
-from .windows.widgets import NTkFrame
-from .windows.widgets import NTkLabel
-from .windows.widgets import NTkOptionMenu
-from .windows.widgets import NTkProgressBar
-from .windows.widgets import NTkRadioButton
-from .windows.widgets import NTkScrollbar
-from .windows.widgets import NTkSegmentedButton
-from .windows.widgets import NTkSlider
-from .windows.widgets import NTkSwitch
-from .windows.widgets import NTkTabview
-from .windows.widgets import NTkTextbox
-from .windows.widgets import NTkScrollableFrame
-from .windows.widgets import NTkDropdownMenu
-from .windows.widgets import NTkMenuBar
-from .windows.widgets import NTkCodeBox
+from .windows.widgets import (
+    NTkButton,
+    NTkCheckBox,
+    NTkComboBox,
+    NTkEntry,
+    NTkFrame,
+    NTkLabel,
+    NTkOptionMenu,
+    NTkProgressBar,
+    NTkRadioButton,
+    NTkScrollbar,
+    NTkSegmentedButton,
+    NTkSlider,
+    NTkSwitch,
+    NTkTabview,
+    NTkTextbox,
+    NTkScrollableFrame,
+    NTkDropdownMenu,
+    NTkMenuBar,
+    NTkCodeBox,
+)
 
 # import windows
-from .windows import NTk
-from .windows import NTkToplevel
-from .windows import NTkInputDialog
-from .windows import NTkTitleMenu
-from .windows import NTkScrollableDropdown
-from .windows import NTkScrollableDropdownFrame
-from .windows import NTkMessageBox
+from .windows import (
+    NTk,
+    ntk_tk,
+    NTkToplevel,
+    NTkInputDialog,
+    NTkTitleMenu,
+    NTkScrollableDropdown,
+    NTkScrollableDropdownFrame,
+    NTkMessageBox,
+    NTkToolTip,
+    NtkNotificationPanel,
+    NTkNotifyType,
+    NTkNotificationManager,
+)
 
 # import font classes
 from .windows.widgets.font import NTkFont
@@ -53,10 +62,15 @@ from .windows.widgets.font import NTkFont
 # import image classes
 from .windows.widgets.image import NTkImage
 
-from .windows import ntk_tk
-
-_ = Variable, StringVar, IntVar, DoubleVar, BooleanVar, CENTER, filedialog  # prevent IDE from removing unused imports
-
+_ = (
+    Variable,
+    StringVar,
+    IntVar,
+    DoubleVar,
+    BooleanVar,
+    CENTER,
+    filedialog
+)  # prevent IDE from removing unused imports
 
 def set_appearance_mode(mode_string: str):
     """ possible values: light, dark, system """

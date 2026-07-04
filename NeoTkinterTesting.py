@@ -3,6 +3,8 @@ import neotkinter as ntk
 window = ntk.NTk()
 window.title("NeoTkinter Testing Application")
 window.geometry("1000x500")
+ntk.set_appearance_mode("dark")
+ntk.set_default_color_theme("purple")
 
 menuBar = ntk.NTkMenuBar(window)
 menuButton = menuBar.add_cascade("Menu Entry")
@@ -49,6 +51,11 @@ def selectFile():
 
 button1 = ntk.NTkButton(master = app, text = "Select File", command = selectFile)
 button1.pack(pady = 20, padx = 20)
+
+tooltip = ntk.NTkToolTip(button1, message = "This is an NTkToolTip!")
+
+notificationManager = ntk.NTkNotificationManager(window)
+notificationManager.showNotification(message = "This is a NTkNotificationManager.showNotification!", notify_type = ntk.NTkNotifyType.INFO)
 
 textEditor = ntk.NTkCodeBox(master = app, language = "txt")
 textEditor.pack(pady = 20, padx = 20, expand = True, fill = "both")
