@@ -60,7 +60,7 @@ from .windows import (
 from .windows.widgets.font import NTkFont
 
 # import image classes
-from .windows.widgets.image import NTkImage
+from .windows.widgets.image import NTkImage, NTkAnimatedImage
 
 _ = (
     Variable,
@@ -69,7 +69,7 @@ _ = (
     DoubleVar,
     BooleanVar,
     CENTER,
-    filedialog
+    filedialog,
 )  # prevent IDE from removing unused imports
 
 def set_appearance_mode(mode_string: str):

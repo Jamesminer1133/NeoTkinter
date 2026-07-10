@@ -45,9 +45,9 @@ def selectFile():
     print("File select button clicked.")
     try:
         msg = "The file:", ntk.filedialog.askopenfile(mode = "r", filetypes=[("Python Files", "*.py")]).name, "was selected."
-        ntk.NTkMessagebox(message= msg, icon="check", option_1="Ok")
+        ntk.NTkMessageBox(message= msg, icon="check", option_1="Ok")
     except Exception:
-        ntk.NTkMessagebox(message= "No file was selected.", icon="warning", option_1="Ok")
+        ntk.NTkMessageBox(message= "No file was selected.", icon="warning", option_1="Ok")
 
 button1 = ntk.NTkButton(master = app, text = "Select File", command = selectFile)
 button1.pack(pady = 20, padx = 20)
