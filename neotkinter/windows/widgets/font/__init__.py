@@ -14,6 +14,9 @@ NeoTkinter_directory = os.path.dirname(os.path.dirname(os.path.dirname(os.path.d
 FontManager.load_font(os.path.join(NeoTkinter_directory, "assets", "fonts", "Roboto", "Roboto-Regular.ttf"))
 FontManager.load_font(os.path.join(NeoTkinter_directory, "assets", "fonts", "Roboto", "Roboto-Medium.ttf"))
 
+FontManager.load_font(os.path.join(NeoTkinter_directory, "assets", "fonts", "Minecraft.ttf"))
+FontManager.load_font(os.path.join(NeoTkinter_directory, "assets", "fonts", "StandardGalacticAlphabet.ttf"))
+
 # load font necessary for rendering the widgets (used on Windows/Linux)
 if FontManager.load_font(os.path.join(NeoTkinter_directory, "assets", "fonts", "CustomTkinter_shapes_font.otf")) is False:
     # change draw method if font loading failed
